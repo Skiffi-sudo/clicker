@@ -1,8 +1,15 @@
-html {
-    font-family: "Press Start 2P";
-    font-size: 2rem;
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
 }
 
+html,
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +19,15 @@ body {
     height: 100vh;
     background-color: #222;
     color: white;
+}
+body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEdzBge1ZN89MWfx8r6edoGeGsm04Sgqyk3h2A8YdBM8u4b9-9A)
+        repeat center;
+    background-size: 5px;
+}
+html {
+    font-family: "VT323", monospace;
+    font-size: 2rem;
 }
 
 main {
@@ -28,8 +44,8 @@ main {
 
     position: relative;
     font-size: 0.75rem;
-    width: 200px;
-    height: 75px;
+    width: 150px;
+    height: 50px;
     max-width: 100%;
     max-height: 100%;
     margin: 2rem;
@@ -38,29 +54,20 @@ main {
     cursor: pointer;
     outline: none;
     color: white;
-    font-family: "Press Start 2P", monospace;
+    font-family: "VT323", monospace;
     font-weight: bold;
     background-color: var(--color);
-    box-shadow: 0 -3px var(--color), 3px 0 var(--color), 0 3px var(--color),
-        -3px 0 var(--color), 0 -6px var(--border-color),
-        3px -3px var(--border-color), 6px 0 var(--border-color),
-        0 6px var(--border-color), -3px 3px var(--border-color),
-        -6px 0 var(--border-color), -3px -3px var(--border-color),
-        3px 3px var(--border-color), 0px 9px var(--shadow-color),
-        3px 6px var(--shadow-color), 6px 3px var(--shadow-color),
-        0px 9px var(--shadow-color), -3px 6px var(--shadow-color),
-        -6px 3px var(--shadow-color);
+    box-shadow: -3px -3px var(--border-color), 3px 3px var(--border-color),
+        0px 9px var(--shadow-color), 3px 6px var(--shadow-color),
+        6px 3px var(--shadow-color), 0px 9px var(--shadow-color),
+        -3px 6px var(--shadow-color), -6px 3px var(--shadow-color);
+    border: dashed red;
 }
 
 #button:active {
     top: 6px;
-    box-shadow: 0 -3px var(--color), 3px 0 var(--color), 0 3px var(--color),
-        -3px 0 var(--color), 0 -6px var(--border-color),
-        3px -3px var(--border-color), 6px 0 var(--border-color),
-        0 6px var(--border-color), -3px 3px var(--border-color),
-        -6px 0 var(--border-color), -3px -3px var(--border-color),
-        3px 3px var(--border-color), 0px 6px var(--shadow-color),
-        3px 3px var(--shadow-color), 6px 0px var(--shadow-color),
+
+    box-shadow: 3px 3px var(--shadow-color), 6px 0px var(--shadow-color),
         0px 6px var(--shadow-color), -3px 3px var(--shadow-color),
         -6px 0px var(--shadow-color);
 }
